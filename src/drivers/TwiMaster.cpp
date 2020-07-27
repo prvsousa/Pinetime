@@ -6,7 +6,7 @@
 using namespace Pinetime::Drivers;
 
 // TODO use shortcut to automatically send STOP when receive LastTX, for example
-// TODO use DMA/IRQ
+// TODO use DMA/IRQ 
 
 TwiMaster::TwiMaster(const Modules module, const Parameters& params) : module{module}, params{params} {
   mutex = xSemaphoreCreateBinary();
